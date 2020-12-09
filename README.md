@@ -18,7 +18,7 @@ Mat img = cv::imread("img.png");
 // загружаем dll с обработчиком
 CVWrapper blur("blur.so")
 
-запускаем асинхронную обработку
+// запускаем асинхронную обработку
 auto handle = blur.processAsync(img);
 std::this_thread::sleep_for(std::chrono::milliseconds(10));
 
